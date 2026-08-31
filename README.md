@@ -21,3 +21,9 @@ docker run --rm -p 8081:80 sloparena-web
 ```
 
 The page polls `/api/presence` every 15 seconds. Until the master server exposes `GET /internal/presence`, it gracefully displays an offline invitation.
+
+## GitHub Pages
+
+Pushes to `main` deploy automatically through GitHub Actions. In **Settings → Pages**, select **GitHub Actions** as the source once. The project is served from `/SlopArena-web/`.
+
+Optional repository variables `VITE_DOWNLOAD_URL`, `VITE_FEEDBACK_URL`, and `VITE_PRESENCE_URL` configure the deployed page. The presence URL must be publicly reachable over HTTPS and allow requests from `https://binoui.github.io`.
