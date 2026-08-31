@@ -2,6 +2,8 @@ import './style.css'
 
 const downloadUrl = import.meta.env.VITE_DOWNLOAD_URL || 'https://github.com/Binoui/SlopArena/releases/latest'
 const feedbackUrl = import.meta.env.VITE_FEEDBACK_URL || 'mailto:sloparena.feedback@gmail.com?subject=SlopArena%20demo%20feedback'
+const presenceUrl = import.meta.env.VITE_PRESENCE_URL || '/api/presence'
+const assetBase = import.meta.env.BASE_URL
 
 document.querySelector('#app').innerHTML = `
   <header class="topbar">
@@ -15,8 +17,8 @@ document.querySelector('#app').innerHTML = `
 
   <main id="top">
     <section class="hero" id="play">
-      <img class="fighter fighter--left" src="/characters/manki.png" alt="Manki" />
-      <img class="fighter fighter--right" src="/characters/fightguy.png" alt="FightGuy" />
+      <img class="fighter fighter--left" src="${assetBase}characters/manki.png" alt="Manki" />
+      <img class="fighter fighter--right" src="${assetBase}characters/fightguy.png" alt="FightGuy" />
 
       <div class="hero__copy">
         <p class="eyebrow">A VERY SERIOUS FIGHTING GAME</p>
@@ -85,7 +87,7 @@ async function updatePresence() {
   const names = document.querySelector('#presence-names')
 
   try {
-    const response = await fetch('/api/presence', { signal: AbortSignal.timeout(4000) })
+    const response = await fetch(presenceUrl, { signal: AbortSignal.timeout(4000) })
     if (!response.ok) throw new Error('Presence unavailable')
     const data = await response.json()
     const players = Number(data.onlinePlayerCount) || 0
