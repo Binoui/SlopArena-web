@@ -1,0 +1,10 @@
+{
+  "version": 1,
+  "appRoot": "/home/binoui/Documents/projects/SlopArena-web",
+  "repoRoot": "/home/binoui/Documents/projects/SlopArena-web",
+  "contextRoot": "/home/binoui/Documents/projects/SlopArena-web",
+  "sessionRoot": "/home/binoui/Documents/projects/SlopArena-web/.impeccable/live",
+  "productPath": "/home/binoui/Documents/projects/SlopArena-web/PRODUCT.md",
+  "designPath": "/home/binoui/Documents/projects/SlopArena-web/DESIGN.md",
+  "resolvedFrom": "cwd"
+}

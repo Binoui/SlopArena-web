@@ -1,0 +1,328 @@
+{
+  "schemaVersion": 2,
+  "generatedAt": "2026-09-10T01:25:43+02:00",
+  "title": "Design System: SlopArena",
+  "extensions": {
+    "colorMeta": {
+      "newsprint": {
+        "role": "neutral",
+        "displayName": "Newsprint",
+        "canonical": "#ded8c9",
+        "tonalRamp": [
+          "oklch(15% 0.0213 88.73)",
+          "oklch(26% 0.0213 88.73)",
+          "oklch(38% 0.0213 88.73)",
+          "oklch(50% 0.0213 88.73)",
+          "oklch(62% 0.0213 88.73)",
+          "oklch(74% 0.0213 88.73)",
+          "oklch(86% 0.0213 88.73)",
+          "oklch(95% 0.0213 88.73)"
+        ]
+      },
+      "soot": {
+        "role": "neutral",
+        "displayName": "Soot",
+        "canonical": "#171814",
+        "tonalRamp": [
+          "oklch(15% 0.0079 118.50)",
+          "oklch(26% 0.0079 118.50)",
+          "oklch(38% 0.0079 118.50)",
+          "oklch(50% 0.0079 118.50)",
+          "oklch(62% 0.0079 118.50)",
+          "oklch(74% 0.0079 118.50)",
+          "oklch(86% 0.0079 118.50)",
+          "oklch(95% 0.0079 118.50)"
+        ]
+      },
+      "acid": {
+        "role": "primary",
+        "displayName": "Acid",
+        "canonical": "#dfff36",
+        "tonalRamp": [
+          "oklch(15% 0.2087 118.88)",
+          "oklch(26% 0.2087 118.88)",
+          "oklch(38% 0.2087 118.88)",
+          "oklch(50% 0.2087 118.88)",
+          "oklch(62% 0.2087 118.88)",
+          "oklch(74% 0.2087 118.88)",
+          "oklch(86% 0.2087 118.88)",
+          "oklch(95% 0.2087 118.88)"
+        ]
+      },
+      "corner-orange": {
+        "role": "secondary",
+        "displayName": "Corner Orange",
+        "canonical": "#f05b35",
+        "tonalRamp": [
+          "oklch(15% 0.1911 35.25)",
+          "oklch(26% 0.1911 35.25)",
+          "oklch(38% 0.1911 35.25)",
+          "oklch(50% 0.1911 35.25)",
+          "oklch(62% 0.1911 35.25)",
+          "oklch(74% 0.1911 35.25)",
+          "oklch(86% 0.1911 35.25)",
+          "oklch(95% 0.1911 35.25)"
+        ]
+      },
+      "registration-line": {
+        "role": "neutral",
+        "displayName": "Registration Line",
+        "canonical": "rgba(23, 24, 20, 0.28)",
+        "tonalRamp": [
+          "oklch(15% 0.0079 118.50 / 0.28)",
+          "oklch(26% 0.0079 118.50 / 0.28)",
+          "oklch(38% 0.0079 118.50 / 0.28)",
+          "oklch(50% 0.0079 118.50 / 0.28)",
+          "oklch(62% 0.0079 118.50 / 0.28)",
+          "oklch(74% 0.0079 118.50 / 0.28)",
+          "oklch(86% 0.0079 118.50 / 0.28)",
+          "oklch(95% 0.0079 118.50 / 0.28)"
+        ]
+      },
+      "field-paper": {
+        "role": "neutral",
+        "displayName": "Field Paper",
+        "canonical": "#f4efe3",
+        "tonalRamp": [
+          "oklch(15% 0.0168 88.00)",
+          "oklch(26% 0.0168 88.00)",
+          "oklch(38% 0.0168 88.00)",
+          "oklch(50% 0.0168 88.00)",
+          "oklch(62% 0.0168 88.00)",
+          "oklch(74% 0.0168 88.00)",
+          "oklch(86% 0.0168 88.00)",
+          "oklch(95% 0.0168 88.00)"
+        ]
+      },
+      "success": {
+        "role": "tertiary",
+        "displayName": "Success",
+        "canonical": "#216b26",
+        "tonalRamp": [
+          "oklch(15% 0.1261 144.23)",
+          "oklch(26% 0.1261 144.23)",
+          "oklch(38% 0.1261 144.23)",
+          "oklch(50% 0.1261 144.23)",
+          "oklch(62% 0.1261 144.23)",
+          "oklch(74% 0.1261 144.23)",
+          "oklch(86% 0.1261 144.23)",
+          "oklch(95% 0.1261 144.23)"
+        ]
+      },
+      "error": {
+        "role": "tertiary",
+        "displayName": "Error",
+        "canonical": "#9a2819",
+        "tonalRamp": [
+          "oklch(15% 0.1525 30.92)",
+          "oklch(26% 0.1525 30.92)",
+          "oklch(38% 0.1525 30.92)",
+          "oklch(50% 0.1525 30.92)",
+          "oklch(62% 0.1525 30.92)",
+          "oklch(74% 0.1525 30.92)",
+          "oklch(86% 0.1525 30.92)",
+          "oklch(95% 0.1525 30.92)"
+        ]
+      }
+    },
+    "typographyMeta": {
+      "display": {
+        "displayName": "Display",
+        "purpose": "Hero statement only."
+      },
+      "headline": {
+        "displayName": "Headline",
+        "purpose": "Major section declarations."
+      },
+      "title": {
+        "displayName": "Title",
+        "purpose": "Primary action and installation-step titles."
+      },
+      "body": {
+        "displayName": "Body",
+        "purpose": "Compact explanations and field content."
+      },
+      "label": {
+        "displayName": "Label",
+        "purpose": "Navigation, legends, metadata, and status."
+      }
+    },
+    "shadows": [
+      {
+        "name": "primary-press",
+        "value": "7px 7px 0 #171814",
+        "purpose": "Download action and feedback panel."
+      },
+      {
+        "name": "compact-press",
+        "value": "5px 5px 0 #171814",
+        "purpose": "Compact submit action."
+      },
+      {
+        "name": "feature-offset",
+        "value": "10px 10px 0 #f05b35",
+        "purpose": "Dark gameplay feature card."
+      },
+      {
+        "name": "live-glow",
+        "value": "0 0 12px #dfff36",
+        "purpose": "Live-presence dot only."
+      },
+      {
+        "name": "character-ground",
+        "value": "drop-shadow(0 8px 0 rgba(23, 24, 20, 0.25))",
+        "purpose": "Grounding fighter renders against Newsprint."
+      }
+    ],
+    "motion": [
+      {
+        "name": "press",
+        "value": "transform 0.15s ease, box-shadow 0.15s ease",
+        "purpose": "Short physical press response for primary controls."
+      },
+      {
+        "name": "smooth-scroll",
+        "value": "scroll-behavior: smooth",
+        "purpose": "In-page navigation; disabled when reduced motion is requested."
+      }
+    ],
+    "breakpoints": [
+      {
+        "name": "single-column",
+        "value": "820px"
+      }
+    ]
+  },
+  "components": [
+    {
+      "name": "Download Action",
+      "kind": "button",
+      "refersTo": "download-primary",
+      "description": "The dominant two-line call to download the Windows demo.",
+      "html": "<a class=\"ds-download\" href=\"#\"><span>DOWNLOAD PVP DEMO</span><small>WINDOWS BUILD · GITHUB RELEASES</small></a>",
+      "css": ".ds-download { display:inline-flex; flex-direction:column; gap:5px; width:min(380px, 100%); min-width:0; padding:18px 24px; border:2px solid var(--ink, #171814); border-radius:0; background:var(--acid, #dfff36); color:var(--ink, #171814); box-shadow:7px 7px 0 var(--ink, #171814); text-decoration:none; text-align:center; transform:rotate(-.5deg); transition:transform .15s, box-shadow .15s; } .ds-download span { font:700 19px/1 'Archivo Black', sans-serif; } .ds-download small { font:700 12px/1.3 'Space Mono', monospace; letter-spacing:.06em; } .ds-download:hover { transform:translate(3px, 3px) rotate(.4deg); box-shadow:4px 4px 0 var(--ink, #171814); } .ds-download:focus-visible { outline:3px solid var(--orange, #f05b35); outline-offset:2px; }"
+    },
+    {
+      "name": "Feedback Submit",
+      "kind": "button",
+      "refersTo": "feedback-submit",
+      "description": "The compact form action with a physical press response.",
+      "html": "<button class=\"ds-submit\" type=\"button\">SEND FEEDBACK</button>",
+      "css": ".ds-submit { min-height:44px; border:2px solid var(--ink, #171814); border-radius:0; background:var(--acid, #dfff36); color:var(--ink, #171814); box-shadow:5px 5px 0 var(--ink, #171814); padding:13px 16px; font:700 14px/1 'Space Mono', monospace; cursor:pointer; transition:transform .15s, box-shadow .15s; } .ds-submit:hover { transform:translate(2px, 2px); box-shadow:3px 3px 0 var(--ink, #171814); } .ds-submit:focus-visible { outline:3px solid var(--orange, #f05b35); outline-offset:2px; } .ds-submit:disabled { opacity:.65; cursor:wait; transform:none; box-shadow:5px 5px 0 var(--ink, #171814); }"
+    },
+    {
+      "name": "Text Field",
+      "kind": "input",
+      "refersTo": "field",
+      "description": "Square, high-contrast field used throughout feedback collection.",
+      "html": "<label class=\"ds-field-label\" for=\"ds-feedback\">ANYTHING ELSE?</label><textarea class=\"ds-field\" id=\"ds-feedback\" rows=\"3\" placeholder=\"Bugs, ideas, and questionable opinions…\"></textarea>",
+      "css": ".ds-field-label { display:block; margin-bottom:8px; color:var(--ink, #171814); font:700 12px/1.4 'Space Mono', monospace; } .ds-field { width:100%; min-height:76px; padding:10px; border:2px solid var(--ink, #171814); border-radius:0; background:var(--field-paper, #f4efe3); color:var(--ink, #171814); font:400 16px/1.4 'Space Mono', monospace; resize:vertical; } .ds-field:focus-visible { outline:3px solid var(--orange, #f05b35); outline-offset:2px; } .ds-field:disabled { opacity:.55; cursor:not-allowed; }"
+    },
+    {
+      "name": "Language Switch",
+      "kind": "button",
+      "refersTo": "language-active",
+      "description": "A boxed binary language control with solid active state.",
+      "html": "<div class=\"ds-language\" role=\"group\" aria-label=\"Language\"><button aria-pressed=\"true\">EN</button><button aria-pressed=\"false\">FR</button></div>",
+      "css": ".ds-language { display:inline-flex; border:2px solid var(--ink, #171814); } .ds-language button { min-width:44px; min-height:44px; border:0; border-radius:0; padding:8px 10px; background:var(--paper, #ded8c9); color:var(--ink, #171814); font:700 12px/1 'Space Mono', monospace; cursor:pointer; } .ds-language button[aria-pressed=\"true\"] { background:var(--ink, #171814); color:var(--paper, #ded8c9); } .ds-language button:hover, .ds-language button:focus-visible { background:var(--acid, #dfff36); color:var(--ink, #171814); } .ds-language button:focus-visible { outline:3px solid var(--orange, #f05b35); outline-offset:2px; }"
+    },
+    {
+      "name": "Dark Media Card",
+      "kind": "card",
+      "refersTo": "dark-card",
+      "description": "The Soot feature card with Corner Orange registration offset.",
+      "html": "<article class=\"ds-media\"><div class=\"ds-media-frame\"><strong>GAMEPLAY FOOTAGE<br>NOT READY YET</strong></div><p>HIT PEOPLE. BUILD DAMAGE. SEND THEM FLYING.</p></article>",
+      "css": ".ds-media { max-width:520px; padding:12px; background:var(--ink, #171814); color:var(--paper, #ded8c9); box-shadow:10px 10px 0 var(--orange, #f05b35); transform:rotate(.7deg); font-family:'Space Mono', monospace; } .ds-media-frame { min-height:220px; border:1px solid rgba(222,216,201,.3); background:#292a25; display:grid; place-content:center; text-align:center; } .ds-media strong { max-width:24ch; font-size:12px; line-height:1.4; letter-spacing:.12em; } .ds-media p { margin:13px 4px 2px; font-size:12px; line-height:1.5; font-weight:700; letter-spacing:.05em; } .ds-media:focus-within { outline:3px solid var(--orange, #f05b35); outline-offset:3px; }"
+    },
+    {
+      "name": "Feedback Panel",
+      "kind": "card",
+      "description": "The priority Newsprint form layer on the Corner Orange feedback field.",
+      "html": "<section class=\"ds-feedback-panel\"><fieldset><legend>RATE THE DEMO</legend><label for=\"ds-rating\">HOW FUN WAS IT?</label><select id=\"ds-rating\"><option>CHOOSE A RATING</option><option>5 — EXTREMELY</option></select></fieldset></section>",
+      "css": ".ds-feedback-panel { max-width:520px; padding:30px; border:2px solid var(--ink, #171814); border-radius:0; background:var(--paper, #ded8c9); color:var(--ink, #171814); box-shadow:7px 7px 0 var(--ink, #171814); font-family:'Space Mono', monospace; } .ds-feedback-panel fieldset { margin:0; padding:14px; display:grid; gap:8px; border:2px solid var(--ink, #171814); } .ds-feedback-panel legend, .ds-feedback-panel label { font-size:12px; font-weight:700; letter-spacing:.06em; } .ds-feedback-panel select { width:100%; padding:10px; border:2px solid var(--ink, #171814); border-radius:0; background:var(--field-paper, #f4efe3); color:var(--ink, #171814); font:400 16px/1.4 'Space Mono', monospace; } .ds-feedback-panel select:focus-visible { outline:3px solid var(--orange, #f05b35); outline-offset:2px; }"
+    },
+    {
+      "name": "Presence Band",
+      "kind": "custom",
+      "description": "A resilient live-status strip that keeps the same geometry online or offline.",
+      "html": "<div class=\"ds-presence\"><i aria-hidden=\"true\"></i><strong>2 SLOPPERS ONLINE · 1 MATCH HAPPENING</strong><span>MANKI · FIGHTGUY</span></div>",
+      "css": ".ds-presence { min-height:64px; padding:12px 32px; background:var(--ink, #171814); color:var(--paper, #ded8c9); display:flex; align-items:center; gap:14px; font:400 12px/1.4 'Space Mono', monospace; letter-spacing:.06em; } .ds-presence i { width:10px; height:10px; border-radius:50%; background:var(--acid, #dfff36); box-shadow:0 0 12px var(--acid, #dfff36); flex:0 0 auto; } .ds-presence span { margin-left:auto; opacity:.78; font-size:11px; } .ds-presence:focus-within { outline:3px solid var(--orange, #f05b35); outline-offset:-3px; }"
+    },
+    {
+      "name": "Navigation Link",
+      "kind": "nav",
+      "description": "Compact tracked utility navigation with marker-underline response.",
+      "html": "<nav class=\"ds-nav\" aria-label=\"Main navigation\"><a href=\"#\">PLAY</a><a href=\"#\">INSTALL</a><a href=\"#\">FEEDBACK</a></nav>",
+      "css": ".ds-nav { display:flex; gap:32px; } .ds-nav a { min-height:44px; display:flex; align-items:center; color:var(--ink, #171814); font:700 12px/1.3 'Space Mono', monospace; text-decoration:none; letter-spacing:.08em; } .ds-nav a:hover { text-decoration:underline 3px var(--orange, #f05b35); text-underline-offset:6px; } .ds-nav a:focus-visible { outline:3px solid var(--orange, #f05b35); outline-offset:3px; }"
+    }
+  ],
+  "narrative": {
+    "northStar": "Basement Fight Flyer",
+    "overview": "SlopArena looks like a local tournament announcement assembled with a photocopier, a marker, and just enough layout discipline to keep the fight organized. The system is scrappy, editorial, and playful: oversized condensed-feeling display type does the shouting, compact monospace copy handles instructions and evidence, and small rotations make the composition feel physically placed rather than digitally perfected.\n\nThe roughness is controlled. Strong grids, repeated two-pixel rules, strict square controls, and clear section boundaries keep every crooked card and annotation legible. The visual world rejects slick esports polish—no neon gradients, glossy glass, cinematic chrome, or anonymous competitive-gaming spectacle.",
+    "keyCharacteristics": [
+      "Warm newsprint surfaces under near-black structural ink.",
+      "Acid chartreuse for action and status; corner orange for emphasis and interruption.",
+      "Monumental Archivo Black headlines paired with compact Space Mono utility copy.",
+      "Square corners, two-pixel rules, slight rotations, and hard offset-print shadows.",
+      "Editorial sectioning that collapses cleanly from asymmetric desktop grids to single-column mobile flow."
+    ],
+    "rules": [
+      {
+        "name": "The Four-Ink Rule",
+        "body": "Newsprint and Soot build the page; Acid calls for action; Corner Orange interrupts. Do not introduce a fifth decorative hue.",
+        "section": "colors"
+      },
+      {
+        "name": "The Acid Is Action Rule",
+        "body": "Acid must remain scarce enough to identify interaction or live status immediately.",
+        "section": "colors"
+      },
+      {
+        "name": "The Shout and Type Rule",
+        "body": "Archivo Black names the fight or action; Space Mono explains, labels, and reports it. Never set paragraphs in the display face.",
+        "section": "typography"
+      },
+      {
+        "name": "The Compact Utility Rule",
+        "body": "Small monospace copy earns its size through short lines, strong contrast, and generous line height; do not use it for long-form reading.",
+        "section": "typography"
+      },
+      {
+        "name": "The Structure Before Slop Rule",
+        "body": "Establish the grid, reading order, and section boundary first; rotation and overlap may disturb the surface but never the task flow.",
+        "section": "layout"
+      },
+      {
+        "name": "The Printed Depth Rule",
+        "body": "Hard shadows indicate physical offset or pressability, not ambient light. Never put them on every container.",
+        "section": "elevation"
+      },
+      {
+        "name": "The Circle Has a Job Rule",
+        "body": "Circular geometry means presence or print registration; it is not a generic container shape.",
+        "section": "shapes"
+      },
+      {
+        "name": "The Two-Pixel Rule",
+        "body": "Interactive and sectional outlines use decisive two-pixel Soot strokes. One-pixel borders belong only to low-emphasis detail inside a dark surface.",
+        "section": "shapes"
+      }
+    ],
+    "dos": [
+      "Do build with Newsprint and Soot before assigning Acid or Corner Orange.",
+      "Do use Archivo Black for declarations and Space Mono for instructions, labels, and status.",
+      "Do keep square corners and two-pixel structural rules across controls and panels.",
+      "Do let one rotated or offset element disrupt an otherwise disciplined composition.",
+      "Do collapse asymmetric desktop grids into a clear single-column mobile reading order.",
+      "Do preserve visible keyboard focus and reduced-motion behavior."
+    ],
+    "donts": [
+      "Don't introduce neon gradients, glass panels, glossy chrome, or generic esports spectacle.",
+      "Don't soften the system with rounded cards, pill-shaped buttons, or diffuse ambient card shadows.",
+      "Don't use Acid as general decoration; it signals action or live state.",
+      "Don't scatter rotations, annotations, or hard shadows across every element.",
+      "Don't replace real character renders with generic gaming icons or abstract hero decoration.",
+      "Don't add decorative colors outside the four-ink hierarchy."
+    ]
+  }
+}
