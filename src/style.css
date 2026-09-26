@@ -104,8 +104,8 @@ h1 em { color: var(--orange); font-style: normal; display: inline-block; transfo
 
 .gameplay { display: grid; grid-template-columns: .7fr 1.3fr; gap: 55px; align-items: start; }
 .video-card { background: var(--ink); color: var(--paper); padding: 12px; transform: rotate(.7deg); box-shadow: 10px 10px 0 var(--orange); }
-.video-placeholder { aspect-ratio: 16 / 8.5; border: 1px solid rgba(222,216,201,.3); background: repeating-linear-gradient(135deg, #292a25, #292a25 14px, #252620 14px, #252620 28px); display: grid; place-content: center; text-align: center; }
-.video-placeholder strong { max-width: 24ch; font-size: 12px; line-height: 1.4; letter-spacing: .12em; }
+.video-frame { position: relative; aspect-ratio: 16 / 9; border: 1px solid rgba(222,216,201,.3); }
+.video-frame iframe { position: absolute; inset: 0; width: 100%; height: 100%; border: 0; }
 .video-card p { margin: 13px 4px 2px; font-size: 12px; line-height: 1.5; font-weight: 700; letter-spacing: .05em; }
 
 .install { border-top: 2px solid var(--ink); max-width: none; padding-left: max(32px, calc((100vw - 1056px)/2)); padding-right: max(32px, calc((100vw - 1056px)/2)); }

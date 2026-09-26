@@ -1,6 +1,6 @@
 # SlopArena Web
 
-Small download and status page for the SlopArena PvP demo.
+Small landing and status page for the SlopArena PvP demo on Steam.
 
 ## Local development
 
@@ -9,7 +9,7 @@ npm install
 npm run dev
 ```
 
-Copy `.env.example` to `.env` to override the download, feedback API, and presence URLs.
+Copy `.env.example` to `.env` to override the Steam, feedback API, and presence URLs.
 
 ## Feedback API
 
@@ -37,6 +37,6 @@ Pushes to `main` deploy automatically through GitHub Actions. In **Settings → 
 select **GitHub Actions** as the source once. The project is served from
 `/SlopArena-web/`.
 
-Optional repository variables `VITE_DOWNLOAD_URL`, `VITE_FEEDBACK_API_URL`, and
+Optional repository variables `VITE_STEAM_URL`, `VITE_FEEDBACK_API_URL`, and
 `VITE_PRESENCE_URL` configure the deployed page. The feedback and presence URLs must
 be publicly reachable over HTTPS when the frontend is hosted on GitHub Pages.

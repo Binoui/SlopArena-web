@@ -181,7 +181,7 @@ Components are rough but orderly: hard-edged, visibly interactive, and placed on
 - **Corner Style:** Square.
 - **Background:** Soot for media presentation; Newsprint for forms; Corner Orange for the feedback section field.
 - **Shadow Strategy:** Apply only to priority layers—the gameplay card and feedback panel—not routine section wrappers.
-- **Border:** Two-pixel Soot borders on Newsprint containers; low-contrast one-pixel inner rule on the dark media placeholder.
+- **Border:** Two-pixel Soot borders on Newsprint containers; low-contrast one-pixel inner rule on the dark media frame.
 - **Internal Padding:** Compact 12px media frame; responsive 18–30px form panel.
 
 ### Inputs / Fields

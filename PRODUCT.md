@@ -8,11 +8,11 @@ web
 
 ## Users
 
-The primary users are friends invited to a SlopArena playtest. They need to get the current Windows demo, understand the short installation flow, join one another online, and report what happened after playing.
+The primary users are friends invited to a SlopArena playtest. They need to get the current demo on Steam, understand the short installation flow, join one another online, and report what happened after playing.
 
 ## Product Purpose
 
-SlopArena-web turns an invitation into a completed playtest: players download and launch the free online PvP demo, fight their friends, and send useful feedback that informs the next build. Success means that this full loop works reliably, not merely that the page receives visits or downloads.
+SlopArena-web turns an invitation into a completed playtest: players get and launch the free online PvP demo on Steam, fight their friends, and send useful feedback that informs the next build. Success means that this full loop works reliably, not merely that the page receives visits or clicks.
 
 ## Positioning
 
@@ -21,7 +21,7 @@ SlopArena is a transparent, community-built pre-alpha. Players are invited into 
 ## Operating Context
 
 - Players arrive through a shared link before a playtest.
-- The demo is distributed as a Windows download and installed by downloading, unzipping, and running `SlopArena.exe`.
+- The demo is distributed through Steam and installed from its Steam store page.
 - A controller is highly recommended.
 - Live presence can show online players and active matches; when unavailable, the page invites the visitor to bring a friend instead of presenting stale data.
 - After playing, users rate fun, hit difficulty, camera awkwardness, and lock-on usefulness, can choose a favorite character, and can add optional written feedback.
@@ -31,22 +31,23 @@ SlopArena is a transparent, community-built pre-alpha. Players are invited into 
 - The product is a small, chaotic online platform-fighting demo for friends.
 - The public experience supports English and French, including automatic language selection and a persistent manual switch.
 - Manki and FightGuy are the current named playable characters represented on the site.
-- The download targets Windows, is free, and must continue to point to an executable release source.
+- The demo is free and the primary call to action must point to the SlopArena Steam store page.
 - The feedback flow supports anonymous submission, requires all four ratings, and accepts optional identity, favorite-character context, and written comments.
 - The site must remain usable when live presence is unavailable.
 - The project can be deployed as a Vite static site through GitHub Pages or as Docker services with nginx and the feedback API.
 
 ## Brand Commitments
 
-Preserve the SlopArena name, Manki and FightGuy, the candid pre-alpha status, and the self-aware humor about messiness, breakage, and questionable decisions. Preserve the current product facts: a free Windows online PvP demo for fighting friends, English/French support, controller recommendation, presence information, installation guidance, and the feedback loop.
+Preserve the SlopArena name, Manki and FightGuy, the candid pre-alpha status, and the self-aware humor about messiness, breakage, and questionable decisions. Preserve the current product facts: a free online PvP demo on Steam for fighting friends, English/French support, controller recommendation, presence information, installation guidance, and the feedback loop.
 
 ## Evidence on Hand
 
 - `public/characters/manki.png` and `public/characters/fightguy.png`: current character artwork.
+- `https://youtu.be/LFdEtBUN6wU`: the playtest video embedded in the gameplay card.
 - `src/main.js`: complete English and French product copy, install flow, presence experience, and feedback questionnaire.
-- `README.md`: confirmed development, deployment, download, feedback, and presence behavior.
+- `README.md`: confirmed development, deployment, Steam, feedback, and presence behavior.
 - `server.js`: strict feedback record contract and local newline-delimited storage.
-- There is no committed gameplay clip, testimonial, player count, benchmark, press quote, pricing plan, or other third-party proof. Future work must not fabricate these.
+- The gameplay card embeds the playtest video at `https://youtu.be/LFdEtBUN6wU`. There is no committed testimonial, player count, benchmark, press quote, pricing plan, or other third-party proof. Future work must not fabricate these.
 
 ## Product Principles
 

@@ -1,9 +1,10 @@
 import './style.css'
 
-const downloadUrl = import.meta.env.VITE_DOWNLOAD_URL || 'https://github.com/Binoui/SlopArena/releases/latest'
+const steamUrl = import.meta.env.VITE_STEAM_URL || 'https://store.steampowered.com/search/?term=SlopArena'
 const feedbackApiUrl = import.meta.env.VITE_FEEDBACK_API_URL || '/api/feedback'
 const presenceUrl = import.meta.env.VITE_PRESENCE_URL || '/api/presence'
 const assetBase = import.meta.env.BASE_URL
+const gameplayVideoUrl = 'https://www.youtube-nocookie.com/embed/LFdEtBUN6wU'
 const languageStorageKey = 'sloparena-language'
 
 const copy = {
@@ -17,9 +18,9 @@ const copy = {
     fightYour: 'FIGHT YOUR',
     friends: 'FRIENDS.',
     intro: 'SlopArena is a small, messy platform fighter.<br />This is the first online PvP demo. It will break.',
-    downloadDemo: 'DOWNLOAD PVP DEMO',
-    downloadNote: 'WINDOWS BUILD · GITHUB RELEASES',
-    downloadAria: 'Download the Windows PvP demo from GitHub Releases (opens in a new tab)',
+    steamCta: 'GET IT ON STEAM',
+    steamCtaNote: 'FREE PVP DEMO · STEAM',
+    steamCtaAria: 'Get the free SlopArena PvP demo on Steam (opens in a new tab)',
     mankiAlt: 'Manki',
     fightguyAlt: 'FightGuy',
     noBalance: 'NO BALANCE<br />GUARANTEED',
@@ -34,15 +35,15 @@ const copy = {
     presenceFallback: 'SERVERS ARE QUIET RIGHT NOW',
     presenceFallbackNote: 'Grab someone and start a fight.',
     whatIsThis: 'WHAT IS THIS?',
-    gameplayComing: 'GAMEPLAY FOOTAGE<br />NOT READY YET',
+    videoTitle: 'SlopArena playtest footage',
     gameplayNote: 'HIT PEOPLE. BUILD DAMAGE. SEND THEM FLYING.',
     getInSlop: 'GET IN THE SLOP',
-    download: 'DOWNLOAD',
-    downloadInstructions: 'Grab the latest Windows build from GitHub Releases.',
-    unzip: 'UNZIP',
-    unzipInstructions: "Put it wherever. We don't care.",
-    runGame: 'RUN SLOPARENA.EXE',
-    runInstructions: 'Windows may complain. Classic Windows. Probably safe.',
+    openSteam: 'OPEN THE STEAM PAGE',
+    openSteamInstructions: 'Use the Steam button above. No zip files.',
+    installDemo: 'INSTALL THE DEMO',
+    installDemoInstructions: 'Steam does the installing. One click.',
+    launchGame: 'LAUNCH FROM STEAM',
+    launchGameInstructions: 'Start it, invite your friends, get in the slop.',
     controller: 'CONTROLLER HIGHLY RECOMMENDED',
     foundSomething: 'FOUND SOMETHING STUPID?',
     tellMe: 'TELL ME WHAT<br />BROKE.',
@@ -95,9 +96,9 @@ const copy = {
     fightYour: 'AFFRONTEZ VOS',
     friends: 'AMIS.',
     intro: 'SlopArena est un jeu de combat de plateformes petit et chaotique.<br />Voici la première démo PvP en ligne. Elle va casser.',
-    downloadDemo: 'TÉLÉCHARGER LA DÉMO PVP',
-    downloadNote: 'VERSION WINDOWS · GITHUB RELEASES',
-    downloadAria: 'Télécharger la démo PvP Windows depuis GitHub Releases (s’ouvre dans un nouvel onglet)',
+    steamCta: 'TÉLÉCHARGER SUR STEAM',
+    steamCtaNote: 'DÉMO PVP GRATUITE · STEAM',
+    steamCtaAria: 'Télécharger la démo PvP gratuite de SlopArena sur Steam (s’ouvre dans un nouvel onglet)',
     mankiAlt: 'Manki',
     fightguyAlt: 'FightGuy',
     noBalance: 'ÉQUILIBRE<br />GARANTI : NON',
@@ -112,15 +113,15 @@ const copy = {
     presenceFallback: 'LES SERVEURS SONT CALMES',
     presenceFallbackNote: 'Trouvez quelqu’un et lancez un combat.',
     whatIsThis: "C'EST QUOI ?",
-    gameplayComing: 'EXTRAIT DE JEU<br />PAS ENCORE PRÊT',
+    videoTitle: 'Extraits du playtest SlopArena',
     gameplayNote: 'FRAPPEZ. AUGMENTEZ LES DÉGÂTS. ENVOYEZ-LES VALSER.',
     getInSlop: 'ENTREZ DANS LA BOUE',
-    download: 'TÉLÉCHARGER',
-    downloadInstructions: 'Récupérez la dernière version Windows sur GitHub Releases.',
-    unzip: 'DÉCOMPRESSER',
-    unzipInstructions: 'Mettez-la où vous voulez. Peu importe.',
-    runGame: 'LANCER SLOPARENA.EXE',
-    runInstructions: 'Windows peut se plaindre. Du Windows classique. Probablement sûr.',
+    openSteam: 'OUVRIR LA PAGE STEAM',
+    openSteamInstructions: 'Utilisez le bouton Steam plus haut. Pas de fichier zip.',
+    installDemo: 'INSTALLER LA DÉMO',
+    installDemoInstructions: 'Steam s’occupe de tout. Un seul clic.',
+    launchGame: 'LANCER DEPUIS STEAM',
+    launchGameInstructions: 'Démarrez, invitez vos amis et entrez dans la boue.',
     controller: 'MANETTE VIVEMENT RECOMMANDÉE',
     foundSomething: 'TROUVÉ QUELQUE CHOSE DE BIZARRE ?',
     tellMe: 'DITES-MOI CE QUI<br />A CASSÉ.',
@@ -268,9 +269,9 @@ function render() {
         <p class="eyebrow">${t('seriousGame')}</p>
         <h1>${t('fightYour')}<br /><em>${t('friends')}</em></h1>
         <p class="intro">${t('intro')}</p>
-        <a class="download" href="${downloadUrl}" target="_blank" rel="noreferrer" aria-label="${t('downloadAria')}">
-          <span>${t('downloadDemo')}</span>
-          <small>${t('downloadNote')}</small>
+        <a class="download" href="${steamUrl}" target="_blank" rel="noreferrer" aria-label="${t('steamCtaAria')}">
+          <span>${t('steamCta')}</span>
+          <small>${t('steamCtaNote')}</small>
         </a>
       </div>
       <div class="scribble scribble--one" aria-hidden="true">${t('noBalance')}</div>
@@ -289,8 +290,15 @@ function render() {
         <h2>${t('whatIsThis')}</h2>
       </div>
       <div class="video-card">
-        <div class="video-placeholder">
-          <strong>${t('gameplayComing')}</strong>
+        <div class="video-frame">
+          <iframe
+            src="${gameplayVideoUrl}"
+            title="${t('videoTitle')}"
+            loading="lazy"
+            allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+            referrerpolicy="strict-origin-when-cross-origin"
+            allowfullscreen
+          ></iframe>
         </div>
         <p>${t('gameplayNote')}</p>
       </div>
@@ -302,9 +310,9 @@ function render() {
         <h2>${t('getInSlop')}</h2>
       </div>
       <ol>
-        <li><b>01</b><span><strong>${t('download')}</strong><small>${t('downloadInstructions')}</small></span></li>
-        <li><b>02</b><span><strong>${t('unzip')}</strong><small>${t('unzipInstructions')}</small></span></li>
-        <li><b>03</b><span><strong>${t('runGame')}</strong><small>${t('runInstructions')}</small></span></li>
+        <li><b>01</b><span><strong>${t('openSteam')}</strong><small>${t('openSteamInstructions')}</small></span></li>
+        <li><b>02</b><span><strong>${t('installDemo')}</strong><small>${t('installDemoInstructions')}</small></span></li>
+        <li><b>03</b><span><strong>${t('launchGame')}</strong><small>${t('launchGameInstructions')}</small></span></li>
       </ol>
       <p class="controller-note">${t('controller')}</p>
     </section>

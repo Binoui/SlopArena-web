@@ -33,7 +33,7 @@ jobs:
       - name: Build
         run: npm run build
         env:
-          VITE_DOWNLOAD_URL: ${{ vars.VITE_DOWNLOAD_URL }}
+          VITE_STEAM_URL: ${{ vars.VITE_STEAM_URL }}
           VITE_FEEDBACK_API_URL: ${{ vars.VITE_FEEDBACK_API_URL }}
           VITE_PRESENCE_URL: ${{ vars.VITE_PRESENCE_URL }}
       - name: Configure Pages
