@@ -12,12 +12,11 @@ const copy = {
     home: 'SlopArena home',
     mainNavigation: 'Main navigation',
     play: 'PLAY',
-    install: 'INSTALL',
+    community: 'COMMUNITY',
     feedback: 'FEEDBACK',
-    seriousGame: 'A VERY SERIOUS FIGHTING GAME',
     fightYour: 'FIGHT YOUR',
     friends: 'FRIENDS.',
-    intro: 'SlopArena is a small, messy platform fighter.<br />This is the first online PvP demo. It will break.',
+    intro: 'A free 3D platform fighter.<br />Beat up your friends, build damage, and send them flying.<br />Early playtest. Questionable balance. Bring a friend.',
     steamCta: 'GET IT ON STEAM',
     steamCtaNote: 'FREE PVP DEMO · STEAM',
     steamCtaAria: 'Get the free SlopArena PvP demo on Steam (opens in a new tab)',
@@ -32,52 +31,56 @@ const copy = {
     match: 'MATCH',
     matches: 'MATCHES',
     happening: 'HAPPENING',
-    presenceFallback: 'SERVERS ARE QUIET RIGHT NOW',
-    presenceFallbackNote: 'Grab someone and start a fight.',
+    presenceEmpty: 'NO ONE ONLINE YET',
+    presenceEmptyNote: 'Bring a friend—or find a match on Discord.',
+    presenceUnavailable: 'LIVE STATUS UNAVAILABLE',
+    presenceUnavailableNote: 'You can still find players on Discord.',
     whatIsThis: 'WHAT IS THIS?',
     videoTitle: 'SlopArena playtest footage',
     gameplayNote: 'HIT PEOPLE. BUILD DAMAGE. SEND THEM FLYING.',
     getInSlop: 'GET IN THE SLOP',
-    openSteam: 'OPEN THE STEAM PAGE',
-    openSteamInstructions: 'Use the Steam button above. No zip files.',
-    installDemo: 'INSTALL THE DEMO',
-    installDemoInstructions: 'Steam does the installing. One click.',
-    launchGame: 'LAUNCH FROM STEAM',
-    launchGameInstructions: 'Start it, invite your friends, get in the slop.',
-    controller: 'CONTROLLER HIGHLY RECOMMENDED',
-    foundSomething: 'FOUND SOMETHING STUPID?',
-    tellMe: 'TELL ME WHAT<br />BROKE.',
-    feedbackIntro: 'Help make the next demo less broken.',
-    ratingsLegend: 'RATE THE DEMO',
+    accessSteam: 'GET THE DEMO',
+    accessSteamInstructions: 'Find the free PvP demo on Steam.',
+    accessControls: 'PICK YOUR CONTROLS',
+    accessControlsInstructions: 'Keyboard and mouse or gamepad—your call.',
+    accessFriends: 'BRING A FRIEND',
+    accessFriendsInstructions: 'Find each other in the server browser and meet in a lobby.',
+    communityTitle: "DON'T HAVE SOMEONE TO FIGHT?",
+    communityIntro: 'Find players, organize matches, and help shape the next playtest.',
+    joinDiscord: 'JOIN THE DISCORD',
+    reddit: 'Reddit ↗',
+    sourceCode: 'Source code ↗',
+    foundSomething: 'HOW WAS THE SLOP?',
+    feedbackIntro: 'What worked? What sucked? What broke? One sentence is enough.',
+    ratingsLegend: 'RATE YOUR SESSION — OPTIONAL',
     fun: 'How fun was it?',
-    hitDifficulty: 'How difficult was it to land hits?',
-    camera: 'How awkward was the camera?',
+    hitDifficulty: 'How easy was it to land hits?',
+    camera: 'How comfortable was the camera?',
     lockOn: 'How useful was lock-on (automatic target focus)?',
-    rating1: '1 — Not at all',
-    rating2: '2 — A little',
-    rating3: '3 — Somewhat',
-    rating4: '4 — A lot',
-    rating5: '5 — Extremely',
-    chooseRating: 'Choose a rating',
-    addDetails: 'ADD OPTIONAL DETAILS',
-    optionalDetailsHint: 'Favorite fighter, name, and comments.',
-    favoriteLegend: 'FAVORITE CHARACTER',
+    funLow: 'Not fun',
+    funHigh: 'Great fun',
+    hitDifficultyLow: 'Very hard',
+    hitDifficultyHigh: 'Very easy',
+    cameraLow: 'Uncomfortable',
+    cameraHigh: 'Comfortable',
+    lockOnLow: 'Not useful',
+    lockOnHigh: 'Very useful',
+    notTried: "Didn't try / Not sure",
+    addDetails: 'RATE YOUR SESSION — OPTIONAL',
+    optionalDetailsHint: 'Scores and favorite fighter, if you played.',
+    favoriteLegend: 'FAVORITE CHARACTER — OPTIONAL',
     manki: 'Manki',
     fightguy: 'FightGuy',
     none: 'No favorite',
     unsure: 'Not sure',
-    anonymous: 'Send anonymously',
-    name: 'Name (optional)',
-    anonymousHint: 'Your name is disabled while anonymous.',
-    favoriteReason: 'Why is this your favorite? (optional)',
-    generalFeedback: 'Anything else? (optional)',
-    favoriteReasonPlaceholder: 'Tell us why…',
-    generalFeedbackPlaceholder: 'Bugs, ideas, and questionable opinions…',
+    name: 'Name or Discord handle — optional',
+    message: 'What worked? What sucked? What broke?',
+    messagePlaceholder: 'Tell us what happened…',
     submitFeedback: 'SEND FEEDBACK',
     sending: 'SENDING…',
     retryFeedback: 'TRY AGAIN',
-    ratingRequired: 'Please choose a rating from 1 to 5.',
-    validationError: 'Please complete each required rating.',
+    messageRequired: 'Write at least one sentence before sending.',
+    validationError: 'Please add a message before sending.',
     feedbackSuccess: 'Feedback received. Thank you for helping us break it better.',
     feedbackNetworkError: 'Could not reach the feedback service. Your answers are still here.',
     feedbackServiceError: 'The feedback service is unavailable. Your answers are still here.',
@@ -90,12 +93,11 @@ const copy = {
     home: 'Accueil SlopArena',
     mainNavigation: 'Navigation principale',
     play: 'JOUER',
-    install: 'INSTALLER',
+    community: 'COMMUNAUTÉ',
     feedback: 'AVIS',
-    seriousGame: 'UN JEU DE COMBAT TRÈS SÉRIEUX',
     fightYour: 'AFFRONTEZ VOS',
     friends: 'AMIS.',
-    intro: 'SlopArena est un jeu de combat de plateformes petit et chaotique.<br />Voici la première démo PvP en ligne. Elle va casser.',
+    intro: 'Un jeu de combat de plateformes 3D gratuit.<br />Frappez vos amis, accumulez les dégâts et envoyez-les valser.<br />Playtest précoce. Équilibre douteux. Venez avec un ami.',
     steamCta: 'TÉLÉCHARGER SUR STEAM',
     steamCtaNote: 'DÉMO PVP GRATUITE · STEAM',
     steamCtaAria: 'Télécharger la démo PvP gratuite de SlopArena sur Steam (s’ouvre dans un nouvel onglet)',
@@ -110,52 +112,56 @@ const copy = {
     match: 'MATCH',
     matches: 'MATCHS',
     happening: 'EN COURS',
-    presenceFallback: 'LES SERVEURS SONT CALMES',
-    presenceFallbackNote: 'Trouvez quelqu’un et lancez un combat.',
+    presenceEmpty: 'PERSONNE EN LIGNE POUR LE MOMENT',
+    presenceEmptyNote: 'Venez avec un ami ou trouvez un match sur Discord.',
+    presenceUnavailable: 'STATUT EN DIRECT INDISPONIBLE',
+    presenceUnavailableNote: 'Vous pouvez toujours trouver des joueurs sur Discord.',
     whatIsThis: "C'EST QUOI ?",
     videoTitle: 'Extraits du playtest SlopArena',
     gameplayNote: 'FRAPPEZ. AUGMENTEZ LES DÉGÂTS. ENVOYEZ-LES VALSER.',
     getInSlop: 'ENTREZ DANS LA BOUE',
-    openSteam: 'OUVRIR LA PAGE STEAM',
-    openSteamInstructions: 'Utilisez le bouton Steam plus haut. Pas de fichier zip.',
-    installDemo: 'INSTALLER LA DÉMO',
-    installDemoInstructions: 'Steam s’occupe de tout. Un seul clic.',
-    launchGame: 'LANCER DEPUIS STEAM',
-    launchGameInstructions: 'Démarrez, invitez vos amis et entrez dans la boue.',
-    controller: 'MANETTE VIVEMENT RECOMMANDÉE',
-    foundSomething: 'TROUVÉ QUELQUE CHOSE DE BIZARRE ?',
-    tellMe: 'DITES-MOI CE QUI<br />A CASSÉ.',
-    feedbackIntro: 'Aidez-nous à rendre la prochaine démo moins cassée.',
-    ratingsLegend: 'NOTEZ LA DÉMO',
-    fun: 'À quel point était-ce amusant ?',
-    hitDifficulty: 'Quelle était la difficulté pour toucher ?',
-    camera: 'À quel point la caméra était-elle gênante ?',
-    lockOn: 'Quelle était l’utilité du verrouillage (ciblage automatique) ?',
-    rating1: '1 — Pas du tout',
-    rating2: '2 — Un peu',
-    rating3: '3 — Moyennement',
-    rating4: '4 — Beaucoup',
-    rating5: '5 — Énormément',
-    chooseRating: 'Choisissez une note',
-    addDetails: 'AJOUTER DES DÉTAILS FACULTATIFS',
-    optionalDetailsHint: 'Combattant préféré, nom et commentaires.',
-    favoriteLegend: 'PERSONNAGE PRÉFÉRÉ',
+    accessSteam: 'TROUVEZ LA DÉMO',
+    accessSteamInstructions: 'La démo PvP gratuite est sur Steam.',
+    accessControls: 'CHOISISSEZ VOS COMMANDES',
+    accessControlsInstructions: 'Clavier et souris ou manette : à vous de choisir.',
+    accessFriends: 'VENEZ AVEC UN AMI',
+    accessFriendsInstructions: 'Retrouvez-vous dans la liste des serveurs, puis dans un salon.',
+    communityTitle: 'PERSONNE À AFFRONTER ?',
+    communityIntro: 'Trouvez des joueurs, organisez des matchs et contribuez au prochain playtest.',
+    joinDiscord: 'REJOINDRE LE DISCORD',
+    reddit: 'Reddit ↗',
+    sourceCode: 'Code source ↗',
+    foundSomething: 'ALORS, CETTE BAGARRE ?',
+    feedbackIntro: 'Qu’est-ce qui a marché, déçu ou cassé ? Une phrase suffit.',
+    ratingsLegend: 'NOTEZ VOTRE SESSION — FACULTATIF',
+    fun: 'C’était amusant ?',
+    hitDifficulty: 'Était-il facile de toucher vos adversaires ?',
+    camera: 'La caméra était-elle confortable ?',
+    lockOn: 'Le verrouillage (ciblage automatique) était-il utile ?',
+    funLow: 'Pas amusant',
+    funHigh: 'Très amusant',
+    hitDifficultyLow: 'Très difficile',
+    hitDifficultyHigh: 'Très facile',
+    cameraLow: 'Inconfortable',
+    cameraHigh: 'Confortable',
+    lockOnLow: 'Inutile',
+    lockOnHigh: 'Très utile',
+    notTried: 'Pas essayé / Je ne sais pas',
+    addDetails: 'NOTEZ VOTRE SESSION — FACULTATIF',
+    optionalDetailsHint: 'Notes et combattant préféré, si vous avez joué.',
+    favoriteLegend: 'PERSONNAGE PRÉFÉRÉ — FACULTATIF',
     manki: 'Manki',
     fightguy: 'FightGuy',
     none: 'Aucun préféré',
     unsure: 'Je ne sais pas',
-    anonymous: 'Envoyer anonymement',
-    name: 'Nom (facultatif)',
-    anonymousHint: 'Votre nom est désactivé en mode anonyme.',
-    favoriteReason: 'Pourquoi est-ce votre préféré ? (facultatif)',
-    generalFeedback: 'Autre chose ? (facultatif)',
-    favoriteReasonPlaceholder: 'Dites-nous pourquoi…',
-    generalFeedbackPlaceholder: 'Bugs, idées et opinions discutables…',
+    name: 'Nom ou pseudo Discord — facultatif',
+    message: 'Qu’est-ce qui a marché, déçu ou cassé ?',
+    messagePlaceholder: 'Racontez-nous ce qui s’est passé…',
     submitFeedback: 'ENVOYER L’AVIS',
     sending: 'ENVOI…',
     retryFeedback: 'RÉESSAYER',
-    ratingRequired: 'Choisissez une note de 1 à 5.',
-    validationError: 'Veuillez remplir chaque note obligatoire.',
+    messageRequired: 'Écrivez au moins une phrase avant d’envoyer.',
+    validationError: 'Ajoutez un message avant d’envoyer.',
     feedbackSuccess: 'Avis reçu. Merci de nous aider à mieux casser le jeu.',
     feedbackNetworkError: 'Impossible de joindre le service d’avis. Vos réponses sont toujours ici.',
     feedbackServiceError: 'Le service d’avis est indisponible. Vos réponses sont toujours ici.',
@@ -167,12 +173,10 @@ const copy = {
 }
 
 const feedbackState = {
-  anonymous: true,
   name: '',
+  message: '',
   ratings: { fun: '', hitDifficulty: '', camera: '', lockOn: '' },
   favoriteCharacter: '',
-  favoriteReason: '',
-  generalFeedback: '',
   status: '',
   pending: false,
 }
@@ -200,20 +204,31 @@ function escapeHtml(value) {
   return String(value ?? '').replace(/[&<>"']/g, (character) => ({ '&': '&amp;', '<': '&lt;', '>': '&gt;', '"': '&quot;', "'": '&#39;' })[character])
 }
 
-function ratingOptions(selected) {
-  return [`<option value="">${t('chooseRating')}</option>`, ...[1, 2, 3, 4, 5].map((value) => `<option value="${value}"${selected === String(value) ? ' selected' : ''}>${t(`rating${value}`)}</option>`)].join('')
+function ratingChoices(key, selected) {
+  return `<fieldset class="rating-group">
+    <legend>${t(key)}</legend>
+    <div class="rating-choices">
+      ${[1, 2, 3, 4, 5].map((value) => `<label><input type="radio" name="rating-${key}" data-rating="${key}" value="${value}"${selected === String(value) ? ' checked' : ''} /><span>${value}</span></label>`).join('')}
+    </div>
+    <div class="rating-ends"><span>${t(`${key}Low`)}</span><span>${t(`${key}High`)}</span></div>
+    <label class="choice"><input type="radio" name="rating-${key}" data-rating="${key}" value="notTried"${selected === 'notTried' ? ' checked' : ''} /> ${t('notTried')}</label>
+  </fieldset>`
 }
 
 function renderPresence() {
   const copyElement = document.querySelector('#presence-copy')
   const namesElement = document.querySelector('#presence-names')
   if (!copyElement || !namesElement) return
+  document.querySelector('.presence').dataset.state = presenceState.status
   if (presenceState.status === 'checking') {
     copyElement.textContent = t('presenceChecking')
     namesElement.textContent = ''
   } else if (presenceState.status === 'fallback') {
-    copyElement.textContent = t('presenceFallback')
-    namesElement.textContent = t('presenceFallbackNote')
+    copyElement.textContent = t('presenceUnavailable')
+    namesElement.textContent = t('presenceUnavailableNote')
+  } else if (presenceState.players === 0) {
+    copyElement.textContent = t('presenceEmpty')
+    namesElement.textContent = t('presenceEmptyNote')
   } else {
     const playerLabel = presenceState.players === 1 ? t('slopper') : t('sloppers')
     const matchLabel = presenceState.matches === 1 ? t('match') : t('matches')
@@ -242,7 +257,7 @@ function renderFeedbackStatus() {
 
 function render() {
   const ratings = feedbackState.ratings
-  const optionalOpen = !feedbackState.anonymous || feedbackState.favoriteCharacter || feedbackState.favoriteReason || feedbackState.generalFeedback
+  const optionalOpen = feedbackState.favoriteCharacter || Object.values(ratings).some(Boolean)
   document.documentElement.lang = language
   document.title = language === 'fr' ? 'SlopArena — Démo PvP' : 'SlopArena — PvP Demo'
   document.querySelector('#app').innerHTML = `
@@ -251,7 +266,7 @@ function render() {
     <div class="topbar__actions">
       <nav aria-label="${t('mainNavigation')}">
         <a href="#play">${t('play')}</a>
-        <a href="#how">${t('install')}</a>
+        <a href="#community">${t('community')}</a>
         <a href="#feedback">${t('feedback')}</a>
       </nav>
       <div class="language-switch" role="group" aria-label="${t('language')}">
@@ -266,7 +281,6 @@ function render() {
       <img class="fighter fighter--left" src="${assetBase}characters/manki.png" alt="${t('mankiAlt')}" />
       <img class="fighter fighter--right" src="${assetBase}characters/fightguy.png" alt="${t('fightguyAlt')}" />
       <div class="hero__copy">
-        <p class="eyebrow">${t('seriousGame')}</p>
         <h1>${t('fightYour')}<br /><em>${t('friends')}</em></h1>
         <p class="intro">${t('intro')}</p>
         <a class="download" href="${steamUrl}" target="_blank" rel="noreferrer" aria-label="${t('steamCtaAria')}">
@@ -286,7 +300,6 @@ function render() {
 
     <section class="gameplay wrap">
       <div class="section-title">
-        <span>01</span>
         <h2>${t('whatIsThis')}</h2>
       </div>
       <div class="video-card">
@@ -306,41 +319,48 @@ function render() {
 
     <section class="install wrap" id="how">
       <div class="section-title">
-        <span>02</span>
         <h2>${t('getInSlop')}</h2>
       </div>
-      <ol>
-        <li><b>01</b><span><strong>${t('openSteam')}</strong><small>${t('openSteamInstructions')}</small></span></li>
-        <li><b>02</b><span><strong>${t('installDemo')}</strong><small>${t('installDemoInstructions')}</small></span></li>
-        <li><b>03</b><span><strong>${t('launchGame')}</strong><small>${t('launchGameInstructions')}</small></span></li>
-      </ol>
-      <p class="controller-note">${t('controller')}</p>
+      <div class="access-list">
+        <div><strong>${t('accessSteam')}</strong><p>${t('accessSteamInstructions')}</p></div>
+        <div><strong>${t('accessControls')}</strong><p>${t('accessControlsInstructions')}</p></div>
+        <div><strong>${t('accessFriends')}</strong><p>${t('accessFriendsInstructions')}</p></div>
+      </div>
+    </section>
+
+    <section class="community wrap" id="community">
+      <h2>${t('communityTitle')}</h2>
+      <p>${t('communityIntro')}</p>
+      <a class="community__cta" href="https://discord.gg/VvfaxDCF6Z" target="_blank" rel="noopener noreferrer">${t('joinDiscord')} ↗</a>
+      <div class="community__links">
+        <a href="https://www.reddit.com/r/sloparena" target="_blank" rel="noopener noreferrer">${t('reddit')}</a>
+        <a href="https://github.com/Binoui/SlopArena" target="_blank" rel="noopener noreferrer">${t('sourceCode')}</a>
+      </div>
     </section>
 
     <section class="feedback" id="feedback">
       <div class="feedback__intro">
-        <p class="eyebrow">${t('foundSomething')}</p>
-        <h2 id="feedback-title">${t('tellMe')}</h2>
+        <h2 id="feedback-title">${t('foundSomething')}</h2>
         <p>${t('feedbackIntro')}</p>
       </div>
       <form class="feedback-form" id="feedback-form" aria-labelledby="feedback-title" novalidate>
-        <fieldset>
-          <legend>${t('ratingsLegend')}</legend>
-          <label for="rating-fun">${t('fun')} <span aria-hidden="true">*</span></label>
-          <select id="rating-fun" data-rating="fun" required aria-required="true">${ratingOptions(ratings.fun)}</select>
-          <label for="rating-hitDifficulty">${t('hitDifficulty')} <span aria-hidden="true">*</span></label>
-          <select id="rating-hitDifficulty" data-rating="hitDifficulty" required aria-required="true">${ratingOptions(ratings.hitDifficulty)}</select>
-          <label for="rating-camera">${t('camera')} <span aria-hidden="true">*</span></label>
-          <select id="rating-camera" data-rating="camera" required aria-required="true">${ratingOptions(ratings.camera)}</select>
-          <label for="rating-lockOn">${t('lockOn')} <span aria-hidden="true">*</span></label>
-          <select id="rating-lockOn" data-rating="lockOn" required aria-required="true">${ratingOptions(ratings.lockOn)}</select>
-        </fieldset>
+        <label for="feedback-message">${t('message')} <span aria-hidden="true">*</span></label>
+        <textarea id="feedback-message" name="message" rows="5" maxlength="2000" required aria-required="true" placeholder="${t('messagePlaceholder')}">${escapeHtml(feedbackState.message)}</textarea>
+        <label for="feedback-name">${t('name')}</label>
+        <input id="feedback-name" name="name" type="text" maxlength="80" value="${escapeHtml(feedbackState.name)}" />
         <details class="feedback-optional"${optionalOpen ? ' open' : ''}>
           <summary>
             <span>${t('addDetails')}</span>
             <small>${t('optionalDetailsHint')}</small>
           </summary>
           <div class="feedback-optional__fields">
+            <fieldset class="ratings">
+              <legend>${t('ratingsLegend')}</legend>
+              ${ratingChoices('fun', ratings.fun)}
+              ${ratingChoices('hitDifficulty', ratings.hitDifficulty)}
+              ${ratingChoices('camera', ratings.camera)}
+              ${ratingChoices('lockOn', ratings.lockOn)}
+            </fieldset>
             <fieldset>
               <legend>${t('favoriteLegend')}</legend>
               <label class="choice"><input type="radio" name="favoriteCharacter" value="manki"${feedbackState.favoriteCharacter === 'manki' ? ' checked' : ''} /> ${t('manki')}</label>
@@ -348,14 +368,6 @@ function render() {
               <label class="choice"><input type="radio" name="favoriteCharacter" value="none"${feedbackState.favoriteCharacter === 'none' ? ' checked' : ''} /> ${t('none')}</label>
               <label class="choice"><input type="radio" name="favoriteCharacter" value="unsure"${feedbackState.favoriteCharacter === 'unsure' ? ' checked' : ''} /> ${t('unsure')}</label>
             </fieldset>
-            <label class="choice anonymous"><input type="checkbox" id="anonymous"${feedbackState.anonymous ? ' checked' : ''} /> ${t('anonymous')}</label>
-            <label for="feedback-name">${t('name')}</label>
-            <input id="feedback-name" name="name" type="text" maxlength="80" value="${escapeHtml(feedbackState.name)}"${feedbackState.anonymous ? ' disabled' : ''} aria-describedby="anonymous-hint" />
-            <small id="anonymous-hint" class="field-hint">${t('anonymousHint')}</small>
-            <label for="favorite-reason">${t('favoriteReason')}</label>
-            <textarea id="favorite-reason" name="favoriteReason" rows="2" maxlength="2000" placeholder="${t('favoriteReasonPlaceholder')}">${escapeHtml(feedbackState.favoriteReason)}</textarea>
-            <label for="general-feedback">${t('generalFeedback')}</label>
-            <textarea id="general-feedback" name="generalFeedback" rows="3" maxlength="2000" placeholder="${t('generalFeedbackPlaceholder')}">${escapeHtml(feedbackState.generalFeedback)}</textarea>
           </div>
         </details>
         <button class="feedback-submit" id="feedback-submit" type="submit">${feedbackState.pending ? t('sending') : t('submitFeedback')}</button>
@@ -374,10 +386,7 @@ function render() {
   document.querySelector('#language-fr').addEventListener('click', () => setLanguage('fr'))
   const form = document.querySelector('#feedback-form')
   form.addEventListener('input', syncField)
-  form.addEventListener('change', (event) => {
-    syncField(event)
-    if (event.target.id === 'anonymous') updateNameField()
-  })
+  form.addEventListener('change', syncField)
   form.addEventListener('submit', submitFeedback)
   renderPresence()
   renderFeedbackStatus()
@@ -398,27 +407,13 @@ function syncField(event) {
   const field = event.target
   if (field.dataset.rating) {
     feedbackState.ratings[field.dataset.rating] = field.value
-    field.setCustomValidity(field.value ? '' : t('ratingRequired'))
-  } else if (field.id === 'anonymous') {
-    feedbackState.anonymous = field.checked
   } else if (field.name === 'favoriteCharacter') {
     feedbackState.favoriteCharacter = field.value
   } else if (field.id === 'feedback-name') {
     feedbackState.name = field.value
-  } else if (field.id === 'favorite-reason') {
-    feedbackState.favoriteReason = field.value
-  } else if (field.id === 'general-feedback') {
-    feedbackState.generalFeedback = field.value
-  }
-}
-
-function updateNameField() {
-  const nameField = document.querySelector('#feedback-name')
-  if (!nameField) return
-  nameField.disabled = feedbackState.anonymous
-  if (feedbackState.anonymous) {
-    feedbackState.name = ''
-    nameField.value = ''
+  } else if (field.id === 'feedback-message') {
+    feedbackState.message = field.value
+    field.setCustomValidity(field.value.trim() ? '' : t('messageRequired'))
   }
 }
 
@@ -428,39 +423,25 @@ function setFeedbackStatus(status, focus = false) {
   if (focus) document.querySelector('#feedback-status')?.focus()
 }
 
-function validateRatings(form) {
-  let valid = true
-  form.querySelectorAll('[data-rating]').forEach((field) => {
-    field.setCustomValidity(field.value ? '' : t('ratingRequired'))
-    if (!field.value) valid = false
-  })
-  return valid
-}
-
 async function submitFeedback(event) {
   event.preventDefault()
   const form = event.currentTarget
-  syncField({ target: form.querySelector('#anonymous') })
-  if (!validateRatings(form) || !form.checkValidity()) {
+  const messageField = form.querySelector('#feedback-message')
+  messageField.setCustomValidity(messageField.value.trim() ? '' : t('messageRequired'))
+  if (!form.checkValidity()) {
     setFeedbackStatus('validationError')
     form.reportValidity()
     return
   }
 
-  const ratings = Object.fromEntries(Object.entries(feedbackState.ratings).map(([key, value]) => [key, Number(value)]))
-  if (!Object.values(ratings).every((value) => Number.isInteger(value) && value >= 1 && value <= 5)) {
-    setFeedbackStatus('validationError')
-    return
-  }
-
+  const ratings = Object.fromEntries(Object.entries(feedbackState.ratings).map(([key, value]) =>
+    [key, value === '' ? null : value === 'notTried' ? value : Number(value)]))
   const payload = {
     language,
-    anonymous: feedbackState.anonymous,
-    name: feedbackState.anonymous ? null : feedbackState.name.trim() || null,
+    name: feedbackState.name.trim() || null,
+    message: feedbackState.message.trim(),
     ratings,
     favoriteCharacter: feedbackState.favoriteCharacter || null,
-    favoriteReason: feedbackState.favoriteReason.trim() || null,
-    generalFeedback: feedbackState.generalFeedback.trim() || null,
   }
 
   feedbackState.pending = true
@@ -489,9 +470,13 @@ async function updatePresence() {
     const response = await fetch(presenceUrl, { signal: AbortSignal.timeout(4000) })
     if (!response.ok) throw new Error('Presence unavailable')
     const data = await response.json()
+    if (!Number.isInteger(data?.onlinePlayerCount) || data.onlinePlayerCount < 0 ||
+        !Number.isInteger(data?.activeMatchCount) || data.activeMatchCount < 0) {
+      throw new Error('Invalid presence response')
+    }
     presenceState.status = 'success'
-    presenceState.players = Number(data.onlinePlayerCount) || 0
-    presenceState.matches = Number(data.activeMatchCount) || 0
+    presenceState.players = data.onlinePlayerCount
+    presenceState.matches = data.activeMatchCount
     presenceState.names = Array.isArray(data.playerNames) ? data.playerNames.map(String) : []
   } catch {
     presenceState.status = 'fallback'

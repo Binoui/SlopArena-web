@@ -140,9 +140,9 @@ The palette behaves like a four-ink flyer: warm stock, dense black ink, one fluo
 
 ## Layout
 
-The desktop composition alternates full-bleed structural bands with a centered content frame capped at 1120px. The hero is a centered overlay composition: copy sits above two edge-anchored character renders and a large registration circle. Gameplay and feedback use asymmetric two-column grids; installation uses three equal sequential cells. Major sections use approximately 90px vertical padding, while navigation and footer rely on full-width bands and responsive horizontal gutters.
+The desktop composition alternates full-bleed structural bands with a centered content frame capped at 1120px. The hero is a centered overlay composition: copy sits above two edge-anchored character renders and a large registration circle. Gameplay and feedback use asymmetric two-column grids; access uses three concise answers, followed by a standalone Discord-first community section. Major sections use approximately 90px vertical padding, while navigation and footer rely on full-width bands and responsive horizontal gutters.
 
-At 820px and below, content becomes single-column. Secondary navigation links disappear while the primary Play link and language controls remain. Character renders shrink and move toward the hero edges, annotations disappear, presence wraps, installation cells stack with horizontal separators, and the footer changes to a vertical stack. The implemented 390px layout has no horizontal overflow.
+At 820px and below, content becomes single-column. Play, Community, Feedback, and the language switch remain accessible; at 600px and below the header wraps to two rows. Character renders shrink and move toward the hero edges, annotations disappear, presence wraps, access answers stack with separators, and the footer changes to a vertical stack. The implemented 390px layout has no horizontal overflow.
 
 **The Structure Before Slop Rule.** Establish the grid, reading order, and section boundary first; rotation and overlap may disturb the surface but never the task flow.
 
@@ -187,21 +187,20 @@ Components are rough but orderly: hard-edged, visibly interactive, and placed on
 ### Inputs / Fields
 - **Style:** Field Paper fill, two-pixel Soot stroke, square corners, 10px internal padding, and a 16px Space Mono input size that avoids mobile focus zoom.
 - **Focus:** Three-pixel Corner Orange outline with a two-pixel offset.
-- **Error / Disabled:** Error appears as semantic Error text with an explicit retry action. Failed submission preserves the visible draft; disabled identity fields retain layout, lower opacity, and show a blocked cursor.
+- **Error / Disabled:** Error appears as semantic Error text with an explicit retry action. Failed submission preserves the visible draft; the submit control is disabled only while sending.
 
 ### Navigation
 - The top bar is a 74px Newsprint band separated by a two-pixel Soot rule. The slightly rotated Archivo Black wordmark anchors the left; tracked Space Mono links and a boxed language switch align right with 44px-high targets.
 - Link hover uses a three-pixel Corner Orange underline with a six-pixel offset. The active language is a Soot block reversed to Newsprint; hover and keyboard focus invert to Acid.
-- At the mobile breakpoint, retain Play, Feedback, and the language switch while hiding Install. At 360px and below, the wordmark already returns home, so retain Feedback as the single task link.
+- On narrow screens, retain all three task links and the language switch by wrapping the header instead of hiding navigation.
 
 ### Presence Band
 - A full-width Soot strip with reversed Newsprint status copy and a glowing Acid dot.
 - Player names align to the far edge on desktop and wrap beneath the status on mobile.
-- Offline fallback uses the same structure as live data so loss of service does not destabilize the page.
+- A confirmed empty response invites a friend or Discord match; a failed or malformed response says live status is unavailable and does not claim zero players.
 
-### Editorial Section Title
-- A small Corner Orange sequence number precedes an oversized Archivo Black heading on a shared baseline.
-- Use only when the section belongs to an actual ordered walkthrough or page sequence.
+### Section Titles
+- Oversized Archivo Black headings carry each section without decorative sequence numbers; access answers are not a numbered installation walkthrough.
 
 ## Do's and Don'ts
 
